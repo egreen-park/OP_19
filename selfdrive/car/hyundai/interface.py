@@ -63,7 +63,7 @@ class CarInterface(CarInterfaceBase):
 
     # longitudinal
     ret.longitudinalTuning.kpBP = [0., 5.*CV.KPH_TO_MS, 10.*CV.KPH_TO_MS, 20.*CV.KPH_TO_MS, 130.*CV.KPH_TO_MS]
-    ret.longitudinalTuning.kpV = [1.6, 1.18, 0.9, 0.78, 0.48]
+    ret.longitudinalTuning.kpV = [1.2, 1.11, 0.9, 0.78, 0.48] # 1.6, 1.18, 0.9, 0.78, 0.48
     ret.longitudinalTuning.kiBP = [0., 130. * CV.KPH_TO_MS]
     ret.longitudinalTuning.kiV = [0.1, 0.06]
 
@@ -223,7 +223,7 @@ class CarInterface(CarInterfaceBase):
       ret.centerToFront = ret.wheelbase * 0.4
     elif candidate in [CAR.K7, CAR.K7_HEV]:
       tire_stiffness_factor = 0.7
-      ret.mass = 1650. + STD_CARGO_KG
+      ret.mass = 1685. + STD_CARGO_KG
       ret.wheelbase = 2.855
       ret.centerToFront = ret.wheelbase * 0.4
       ret.steerRatio = 17.5
