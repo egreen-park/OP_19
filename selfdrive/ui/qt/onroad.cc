@@ -695,7 +695,7 @@ void NvgWindow::drawSpeedLimit(QPainter &p) {
   {
       int w = 120;
       int h = 54;
-      int x = (width() + (bdr_s*2))/2 - w/2 - bdr_s - 590; //NDA 
+      int x = (width() + (bdr_s*2))/2 - w/2 - bdr_s - 596; //NDA 
       int y = 40 - bdr_s + 430;  //NDA 
 
       p.setOpacity(1.f);
